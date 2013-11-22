@@ -23,7 +23,7 @@
     <%= f.label :gender %><br>
     <%= f.text_field :gender %>
   </div>
-  <%= fields_for :address do |address_fields|%>
+  <%= f.fields_for :address do |address_fields|%>
     Street:
     <%= address_fields.text_field :street%>
     Zip code:
